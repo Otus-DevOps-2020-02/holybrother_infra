@@ -1,5 +1,3 @@
-# holybrother_infra
-holybrother Infra repository
 # Jump to local instance
 Подключаемся через внешний хост используя ssh forwarding, предварительно добавив ключи ssh -J appuser@35.246.113.27 appuser@10.154.0.3
 # Config 
