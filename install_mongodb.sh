@@ -6,6 +6,6 @@ echo "Update packages"
 sudo apt update
 sudo apt install -y mongodb-org
 echo "Start mongodb"
-sudo systemctl start mongodb
+sudo systemctl start mongod
 echo "Enable autostart mongodb"
-sudo systemctl enable mongodb
+sudo systemctl enable mongod
