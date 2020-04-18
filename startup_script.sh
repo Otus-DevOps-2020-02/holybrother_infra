@@ -1,8 +1,6 @@
 #!/bin/sh
 echo "Install ruby-packages"
 
-echo "Lets update packages"
-sudo apt update
 echo "Install Ruby and Bundler"
 sudo apt-get install -y ruby-full ruby-bundler build-essential
 echo "Ruby and Bundler installed"
@@ -12,8 +10,6 @@ echo "Install MongoDB"
 echo "Add key and repo MongoDB"
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0xd68fa50fea312927
 sudo bash -c 'echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" > /etc/apt/sources.list.d/mongodb-org-3.2.list'
-echo "Update packages"
-sudo apt update
 sudo apt install -y mongodb-org
 echo "Start mongodb"
 sudo systemctl start mongodb
