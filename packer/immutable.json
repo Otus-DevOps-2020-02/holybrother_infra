@@ -30,7 +30,7 @@
         },
         {
             "type": "shell",
-            "script": "files/deploy_reddit_app.sh",
+            "script": "files/deploy.sh",
             "execute_command": "sudo {{.Path}}"
         }
     ]
